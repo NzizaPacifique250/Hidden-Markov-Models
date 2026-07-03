@@ -1,0 +1,32 @@
+# ---- Python environments & local libraries (NOT part of the submission) ----
+# .pylibs = 539 MB of pip --target installs; reproduce via requirements.txt
+.pylibs/
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Python caches / build artifacts ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipython/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- Logs / temp ----
+*.log
+*.tmp
