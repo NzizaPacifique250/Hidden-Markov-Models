@@ -39,3 +39,21 @@ dependency cache); inside a normal virtualenv that line is a harmless no-op.
 The from-scratch Viterbi decoder matches `hmmlearn`, Baum–Welch converges via a log-likelihood
 tolerance check, and the model separates the four activities on the held-out windows. See the
 notebook and [`figures/`](figures/) for the transition heatmap, decoded sequence, and confusion matrix.
+
+## Task allocation & workflow (individual project)
+
+All work was carried out by **Nziza Pacifique**. The milestones below map directly to the commit
+history (`git log`), which traces the project's development in order.
+
+| # | Milestone | Description | Deliverable | Commit |
+|---|---|---|---|---|
+| 1 | Scoping | Recorded the assignment brief and grading rubric | `INSTRUCTIONS.md`, `RUBRIC.md` | *Add assignment instructions* / *Add grading rubric* |
+| 2 | Environment | Reproducible setup and ignore rules | `requirements.txt`, `.gitignore` | *Add .gitignore…* / *Add Python dependency requirements* |
+| 3 | Data collection | 4 activities × (accel + gyro), Physics Toolbox, ~98 Hz | `Datasets/*.csv` | *Added the csv datasets* |
+| 4 | Data cleaning | Segmented recordings into 16 labelled 5 s clips | `Datasets/clips/` | *Segment recordings into 16 labelled 5s activity clips* |
+| 5 | Test set | Built 2 unseen test files from held-out recording tails | `Datasets/unseen_test/` | *Add 2 unseen test files…* |
+| 6 | Preprocessing | Uniform 100 Hz resampling + 2 s / 50 %-overlap windowing | notebook §1–2 | *Implement HMM notebook…* |
+| 7 | Feature extraction | 59 time- & frequency-domain features + Z-score + PCA | notebook §2–3 | *Implement HMM notebook…* |
+| 8 | Modelling | Baum–Welch training + from-scratch Viterbi decoding | notebook §4–6 | *Implement HMM notebook…* |
+| 9 | Evaluation | Confusion matrix + sensitivity/specificity/accuracy on unseen data | `results_metrics.csv`, `figures/` | *Add …figures* / *Add …evaluation metrics* |
+| 10 | Reporting | Report, README, and documentation | `REPORT.md`, `README.md` | *Add project report* / *Update README…* |
