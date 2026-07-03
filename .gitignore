@@ -30,3 +30,7 @@ desktop.ini
 # ---- Logs / temp ----
 *.log
 *.tmp
+
+# ---- Course-provided materials (not part of the submission) ----
+INSTRUCTIONS.md
+RUBRIC.md
